@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Thiện Bình</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-bg-color">
+            <h4>TRƯỜNG ĐẠI HỌC KHOA HỌC HUẾ</h4>
+            <h1>LÊ NGUYỄN THIỆN BÌNH</h1>
+            <h3>Công Nghệ Thông Tin K45B</h3>
+        </div>
+    </div>
+    <hr />
+    <div class="avatar">
+        <img src="./images/avatar.jpg" alt="avatar">
+    </div>
+    <div class="content">
+        <div class="content-main">
+            <button class="collapsible">
+                <img src="./images/user.png" alt="user">
+                Thông tin cá nhân
+            </button>
+            <div class="content-text">
+                <ul>
+                    <li>
+                        <p>Mã sinh viên: <span>21T1020254</span></p>
+                    </li>
+                    <li>
+                        <p>Họ và tên: <span>Lê Nguyễn Thiện Bình</span></p>
+                    </li>
+                    <li>
+                        <p>Ngày tháng năm sinh: <span>01/05/2003</span></p>
+                    </li>
+                    <li>
+                        <p>Email: <span>21T1020254@husc.edu.vn</span></p>
+                    </li>
+                    <li>
+                        <p>Di động: <span>079949248</span></p>
+                    </li>
+                    <li>
+                        <p>Địa chỉ: <span>Thừa Thiên Huế</span></p>
+                    </li>
+                  </ul>
+            </div>
+            <button class="collapsible">
+                <img src="./images/museum.png" alt="museum">
+                Kết quả học tập
+            </button>
+            <div class="content-text">
+                <ul>
+                    <li>
+                        <p>Mã học phần: <span>2021-2022.2.TIN3092.004</span></p>
+                    </li>
+                    <li>
+                        <p>Tên học phần: <span>Lập trình Front-End - Nhóm 4</span></p>
+                    </li>
+                    <li>
+                        <p>Ngày tháng năm sinh: <span>01/05/2003</span></p>
+                    </li>
+                    <li>
+                        <p>Số tín chỉ: <span>2</span></p>
+                    </li>
+                    <li>
+                        <p>Điểm đánh giá học phần gồm: <span>điểm hệ 10: 8.5, điểm chữ: tám phẩy năm và điểm hệ 4: 3.0</span></p>
+                    </li>
+                  </ul>
+            </div>
+            <button class="collapsible">
+                <img src="./images/github.png" alt="github">
+                Sản phẩm cá nhân
+            </button>
+            <div class="content-text">
+                <ul>
+                    <li>
+                        <a href="https://binhaurora153.github.io/BaiTH3/">https://binhaurora153.github.io/Baithuchanh3/</a>
+                    </li>
+                    <li>
+                        <a href="https://binhaurora153.github.io/Baithuchanh4/">https://binhaurora153.github.io/Baithuchanh4/</a>
+                    </li>
+                    <li>
+                        <a href="https://binhaurora153.github.io/Baithuchanh5/">https://binhaurora153.github.io/Baithuchanh5/</a>
+                    </li>
+                    <h5>Sản phẩm của bản thân: </h5>
+                    <li>
+                        <a href="https://binhaurora153.github.io/webtulam/">https://binhaurora153.github.io/webtulam/</a>
+                    </li>
+                  </ul>
+            </div>
+            <button class="collapsible">
+                <img src="./images/photo.png" alt="photo">
+                Thư viện ảnh
+            </button>
+            <div class="grid-container content-text">
+                <div><img src="./images/hoatdong.jpg" alt="" class="fill-image"></div>
+                <div>
+                    <div><img src="./images/background01.jpg" alt="" class="fill-image"></div>
+                    <div class="grid-container col-2">
+                        <div><img src="./images/background1.jpg" alt="" class="fill-image"></div>
+                        <div><img src="./images/background02.jpg" alt="" class="fill-image"></div>
+                    </div>
+                    <div class="grid-container col-2">
+                        <div><img src="./images/khuonvien.jpg" alt="" class="fill-image"></div>
+                        <div><img src="./images/thuvien.jpg" alt="" class="fill-image"></div>
+                    </div>
+                </div>
+                <div class="grid-container col-1">
+                    <div><img src="./images/background02.jpg" alt="" class="fill-image"></div>
+                    <div><img src="./images/anhcuoi3.jpg" alt="" class="fill-image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = "inherit";
+            }
+        });
+    }
+</script>
+</html>

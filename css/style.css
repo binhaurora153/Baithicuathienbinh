@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body .header{
+    background-color: black;
+}
+.header {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    /* padding: 0 0 20px 0; */
+    text-align: center;
+    color: white;
+    background: url('../images/background01.jpg');
+}
+.header-bg-color{
+    background-color: #00000080;
+    padding: 0 0 122px 0;
+    height: 100%;
+}
+.header h4{
+    background-color: #0303038a;
+    padding: 10px 0 10px 0;
+    margin-bottom: 20px;
+}
+.header h1{
+    padding: 10px 0 10px 0;
+    margin: 10px 0 5px 0;
+}
+.header h3{
+    padding: 5px 0 5px 0;
+}
+.avatar {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    bottom: 100px;
+    z-index: 2;
+}
+.avatar img{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px white solid;
+}
+.content{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    bottom: 210px;
+}
+.content .content-main{
+    padding: 122px 0 0 0;
+    margin: 0 150px 0 150px;
+}
+.collapsible {
+    background-color: black;
+    border-bottom: 1px white solid!important;
+    color: white;
+    cursor: pointer;
+    padding: 18px 0 5px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .collapsible img {
+    height: 16px;
+  }
+  .active, .collapsible:hover {
+    color: rgb(184, 184, 184);
+  }
+  
+  .content-text {
+    margin: 10px;
+
+    color: white;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: black;
+  }
+  .content-text ul{
+    padding: 18px;
+  }
+  .content-text li{
+    margin: 12px 12px 0 12px;
+    font-size: 20px;
+  }
+  .content-text h5{
+    margin: 12px 12px 0 12px;
+    font-size: 20px;
+    color: gray;
+  }
+  .content-text a{
+      color: white;
+      text-decoration: none;
+  }
+  .content-text a:hover{
+    color: rgb(79, 79, 197);
+    text-decoration: none;
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.grid-container div{
+    min-height: 100px;
+    border: 1px solid white;
+}
+.row-1_3{
+    grid-template-rows: 1fr 3fr;
+}
+.col-1{
+    grid-template-columns: 4fr;
+}
+.col-2{
+    grid-template-columns: 2fr 2fr;
+}
+.fill-image{
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
+}
